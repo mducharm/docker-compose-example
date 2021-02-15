@@ -20,6 +20,12 @@ services:
     networks: 
       - app-network
 
+  number:
+    container_name: number-service
+    build: ./number-service
+    networks: 
+      - app-network
+
   blue:
     container_name: blue
     build: ./color-service
